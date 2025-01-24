@@ -1,0 +1,38 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-height page with flexbox centering */
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the logo */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Logo */
+.logo {
+    max-width: 80%;  /* Prevents oversized images */
+    max-height: 60vh; /* Ensures it fits on smaller screens */
+    height: auto;
+    width: auto;
+}
+
+/* Optional: Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+    }
+}
